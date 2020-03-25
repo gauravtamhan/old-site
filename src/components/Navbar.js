@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 const NAV_ITEMS = [
     {
@@ -12,21 +12,33 @@ const NAV_ITEMS = [
     }
 ];
 
-const Navbar = () => {
+const Navbar = ({ back }) => {
 
     return (
-        <div className="g nav d-flex flex-row">
-            {NAV_ITEMS.map((item, index) => (
-                <NavLink
-                    className="nav-link"
-                    key={index}
-                    exact={item.location === '/'}
-                    to={item.location}
+        back ? (
+            <div className="g nav d-flex flex-row">
+                <Link
+                    className="nav-link back"
+                    to="/"
                 >
-                    {item.label}
-                </NavLink>
-            ))}
-        </div>
+                    back
+                </Link>
+            </div >
+        ) : (
+            <div className="g nav d-flex flex-row">
+                {NAV_ITEMS.map((item, index) => (
+                    <NavLink
+                        className="nav-link"
+                        key={index}
+                        exact={item.location === '/'}
+                        to={item.location}
+                    >
+                        {item.label}
+                    </NavLink>
+                ))}
+            </div >
+        )
+
     );
 }
 

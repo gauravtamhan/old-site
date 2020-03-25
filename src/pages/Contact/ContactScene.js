@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from 'components/Navbar';
 import Main from 'components/Main';
-import Contact from 'pages/Contact/Contact';
+import Contact from 'pages/Contact';
 
 const ContactScene = () => {
     return (

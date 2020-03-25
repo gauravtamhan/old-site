@@ -1,15 +1,15 @@
 import React from 'react';
 import Navbar from 'components/Navbar';
 import Main from 'components/Main';
-import Home from 'pages/Home';
+import HouseATL from 'pages/HouseATL';
 
-const HomeScene = () => {
+const HouseATLScene = () => {
     return (
         <Main>
-            <Navbar />
-            <Home />
+            <Navbar back />
+            <HouseATL />
         </Main>
     );
 }
 
-export default HomeScene;
+export default HouseATLScene;

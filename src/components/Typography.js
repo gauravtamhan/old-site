@@ -7,6 +7,15 @@ const Typography = ({ variant, children }) => {
             {variant === 'title' && (
                 <h1 className={variant}>{children}</h1>
             )}
+            {variant === 'title2' && (
+                <h2 className={variant}>{children}</h2>
+            )}
+            {variant === 'heading' && (
+                <h3 className={variant}>{children}</h3>
+            )}
+            {variant === 'subtitle' && (
+                <h5 className={variant}>{children}</h5>
+            )}
             {(variant === 'body' || variant === 'label' || variant === 'block') && (
                 <p className={variant}>{children}</p>
             )}
