@@ -47,6 +47,42 @@ button:focus {
     outline: none;
 }
 
+.section {
+    padding: 3rem 0;
+}
+
+.g-btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: #276EF1;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &:hover {
+        background-color: #205dcc;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.padding-sm {
+    padding: 1.8rem 0;
+}
+
+.g-img {
+    width: 100%;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
 /*=============================================================
                     Navbar Styles
 ==============================================================*/
@@ -86,7 +122,7 @@ button:focus {
 }
 
 /*=============================================================
-                    LabelBlock Styles
+                    Block Styles
 ==============================================================*/
 
 .label-block {
@@ -152,9 +188,10 @@ p {
     }
 
     &.body {
-        line-height: 1.8;
-        font-size: 1.25rem;
+        line-height: 1.6;
+        font-size: 1.2rem;
         letter-spacing: 0.04rem;
+        margin-bottom: 1.6rem;
     }
 }
 
