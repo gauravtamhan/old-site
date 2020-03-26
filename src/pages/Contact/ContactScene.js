@@ -7,7 +7,7 @@ const ContactScene = () => {
     return (
         <Main>
             <Navbar />
-            <Contact />
+            <Contact title="Gaurav Tamhan - Front End Developer" />
         </Main>
     );
 }

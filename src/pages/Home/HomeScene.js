@@ -7,7 +7,7 @@ const HomeScene = () => {
     return (
         <Main>
             <Navbar />
-            <Home />
+            <Home title="Gaurav Tamhan - Front End Developer" />
         </Main>
     );
 }
