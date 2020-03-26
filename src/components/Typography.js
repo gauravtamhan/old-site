@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-const Typography = ({ variant, children }) => {
+const Typography = ({ variant, children, className }) => {
     return (
         <Fragment>
             {variant === 'title' && (
@@ -17,7 +17,7 @@ const Typography = ({ variant, children }) => {
                 <h5 className={variant}>{children}</h5>
             )}
             {(variant === 'body' || variant === 'label' || variant === 'block') && (
-                <p className={variant}>{children}</p>
+                <p className={`${variant} ${className || ''}`}>{children}</p>
             )}
         </Fragment>
     );

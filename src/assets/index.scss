@@ -53,7 +53,7 @@ button:focus {
 
 .g-btn {
     display: inline-block;
-    font-weight: 400;
+    font-weight: 600;
     text-align: center;
     cursor: pointer;
     -webkit-user-select: none;
@@ -193,6 +193,15 @@ p {
         letter-spacing: 0.04rem;
         margin-bottom: 1.6rem;
     }
+
+    &.list-header {
+        font-weight: 800;
+        margin-bottom: 1rem;
+    }
+}
+
+ul > li {
+    padding-left: 1rem;
 }
 
 h2.title2 {

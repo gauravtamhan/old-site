@@ -26,10 +26,10 @@ const Home = () => {
         <Fragment>
             <div style={{ marginBottom: 150 }}>
                 <Typography variant="title">
-                    I'm Gaurav.
+                    I'm Gaurav,
                 </Typography>
                 <Typography variant="title">
-                    Front end developer and UX engineer.
+                    A front end dev with a passion for UX.
                 </Typography>
             </div>
 
