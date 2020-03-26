@@ -38,7 +38,7 @@ const HouseATL = () => {
 
             <Section>
                 <div className="row">
-                    <div className="col-lg-10 col-xl-7">
+                    <div className="col-lg-10 col-xl-8">
                         <Typography variant="body">
                             The House ATL Data Collective is a collaborative initiative to build a unified database of subsidized affordable housing in the metro Atlanta area. As part of my Graduate Research Assistantship through Georgia Tech, I had the opportunity to work on this project and build the public-facing web portal that organizes and visualizes the data.
                         </Typography>
@@ -55,7 +55,7 @@ const HouseATL = () => {
                     Project Purposes & Goals
                 </Typography>
                 <div className="row">
-                    <div className="col-lg-10 col-xl-7">
+                    <div className="col-lg-10 col-xl-8">
                         <Typography variant="body">
                             The goal of the web portal was to create a platform that allows civic leaders and housing agencies to gain an overview of the state of subsidized housing as well as update, retrieve, and manipulate the data to observe patterns and make informed decisions.
                         </Typography>
@@ -87,7 +87,7 @@ const HouseATL = () => {
                     Web Stack Explanation
                 </Typography>
                 <div className="row">
-                    <div className="col-lg-10 col-xl-7">
+                    <div className="col-lg-10 col-xl-8">
                         <Typography variant="body">
                             React made the most sense for a state-driven application like this. Its component-based nature and reactive updates to state changes made updating and maintaining the code base much easier.
                         </Typography>
@@ -120,7 +120,7 @@ const HouseATL = () => {
                     Lessons Learned
                 </Typography>
                 <div className="row">
-                    <div className="col-lg-10 col-xl-7">
+                    <div className="col-lg-10 col-xl-8">
                         <Typography variant="body">
                             For this project I got to work closely with stakeholders, the lead designer, and the backend team to bring this product to life. Along the way, I learned how to collaboratively solve problems and the importance of having open communication with other teams to meet requirements on time.
                         </Typography>

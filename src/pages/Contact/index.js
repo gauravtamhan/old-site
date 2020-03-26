@@ -11,7 +11,7 @@ const Contact = () => {
 
     return (
         <Fragment>
-            <div>
+            <div className="padding-sm">
                 <Typography variant="title">Get in touch.</Typography>
             </div>
             <div className="row">

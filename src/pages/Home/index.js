@@ -24,7 +24,7 @@ const Home = () => {
     ]
     return (
         <Fragment>
-            <div style={{ marginBottom: 150 }}>
+            <div className="padding-sm">
                 <Typography variant="title">
                     I'm Gaurav,
                 </Typography>
@@ -35,12 +35,12 @@ const Home = () => {
 
             {links.map((item, index) => (
                 <div key={index} className="row">
-                    <div className="col-md-10 col-lg-7 works">
+                    <div className="col-md-10 col-lg-8 col-xl-7 works">
                         <Typography variant="subtitle">
                             {(index + 1).toLocaleString('en-US', { minimumIntegerDigits: 2 })}
                         </Typography>
                         <Link to={item.location}>
-                            <Typography variant="title2">
+                            <Typography variant="title-2">
                                 {item.label}
                             </Typography>
                         </Link>

@@ -7,7 +7,7 @@ const Typography = ({ variant, children, className }) => {
             {variant === 'title' && (
                 <h1 className={variant}>{children}</h1>
             )}
-            {variant === 'title2' && (
+            {variant === 'title-2' && (
                 <h2 className={variant}>{children}</h2>
             )}
             {variant === 'heading' && (
@@ -24,7 +24,7 @@ const Typography = ({ variant, children, className }) => {
 }
 
 Typography.propTypes = {
-    variant: PropTypes.oneOf(['title', 'title2', 'subtitle', 'heading', 'body', 'label', 'block'])
+    variant: PropTypes.oneOf(['title', 'title-2', 'subtitle', 'heading', 'body', 'label', 'block'])
 };
 
 export default Typography;
