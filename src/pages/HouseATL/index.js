@@ -3,6 +3,8 @@ import Typography from 'components/Typography';
 import Button from 'components/Button';
 import LabelBlock from 'components/LabelBlock';
 import Image from 'components/Image';
+import Section from 'components/Section';
+
 
 
 const HouseATL = () => {
@@ -34,7 +36,7 @@ const HouseATL = () => {
                 </div>
             </div>
 
-            <div className="section">
+            <Section>
                 <div className="row">
                     <div className="col-lg-10 col-xl-7">
                         <Typography variant="body">
@@ -46,9 +48,9 @@ const HouseATL = () => {
                     <Button link={liveLink}>View Live</Button>
                 </div>
                 <Image src={require('./imgs/image-1.png')} />
-            </div>
+            </Section>
 
-            <div className="section">
+            <Section>
                 <Typography variant="heading">
                     Project Purposes & Goals
                 </Typography>
@@ -73,14 +75,14 @@ const HouseATL = () => {
 
                     </div>
                 </div>
-            </div>
+            </Section>
 
-            <div className="section">
+            <Section>
                 <Image src={require('./imgs/image-2.png')} label="Income Breakdown" />
                 <Image src={require('./imgs/image-3.png')} label="Aggregate Data Charts" />
-            </div>
+            </Section>
 
-            <div className="section">
+            <Section>
                 <Typography variant="heading">
                     Web Stack Explanation
                 </Typography>
@@ -111,9 +113,9 @@ const HouseATL = () => {
                         <Image src={require('./imgs/D3.png')} />
                     </div>
                 </div>
-            </div>
+            </Section>
 
-            <div className="section">
+            <Section>
                 <Typography variant="heading">
                     Lessons Learned
                 </Typography>
@@ -127,7 +129,7 @@ const HouseATL = () => {
                         </Typography>
                     </div>
                 </div>
-            </div>
+            </Section>
 
 
         </Fragment>
