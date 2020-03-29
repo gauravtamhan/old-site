@@ -30,7 +30,7 @@ const Navbar = ({ back }) => {
                     <NavLink
                         className="nav-link"
                         key={index}
-                        exact={item.location === '/'}
+                        exact
                         to={item.location}
                     >
                         {item.label}

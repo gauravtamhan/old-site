@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Button = ({ link, children }) => {
+const Button = ({ link, onClick, children }) => {
     return (
-        <a className="g-btn" href={link} target="_blank" rel="noopener noreferrer">{children}</a>
+        <a className="g-btn" href={link} onClick={onClick} target="_blank" rel="noopener noreferrer">{children}</a>
     );
 }
 
