@@ -27,12 +27,12 @@ const Footer = () => {
         <div className="footer">
             <div style={{ height: 1, backgroundColor: '#70757A', marginBottom: 25 }} />
             <div className="row align-items-center">
-                <div className="col-md-6 d-flex justify-content-center justify-content-md-start">
+                <div className="col-8 d-flex justify-content-start">
                     <div className="footer-padding">
-                        <Typography variant="label">Gaurav Tamhan &#x24B8; 2020</Typography>
+                        <Typography variant="label">&#x24B8; 2020 Gaurav Tamhan</Typography>
                     </div>
                 </div>
-                <div className="col-md-6 d-flex justify-content-center justify-content-md-end">
+                <div className="col-4 d-flex justify-content-end">
                     <div className="social-icons footer-padding">
                         {data.map(({ icon, link }) => (
                             <a key={link} href={link} target="_blank" rel="noopener noreferrer">

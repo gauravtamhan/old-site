@@ -2,7 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/index.scss';
 import Routes from './routes'
+import smoothscroll from 'smoothscroll-polyfill';
 import * as serviceWorker from './serviceWorker';
+
+// kick off the polyfill!
+smoothscroll.polyfill();
 
 ReactDOM.render(<React.StrictMode><Routes /></React.StrictMode>, document.getElementById('root'));
 
