@@ -41,7 +41,10 @@ body {
 
 .main {
     padding-top: 45px;
-    padding-bottom: 45px;
+}
+
+.page-content {
+    min-height: calc(100vh - 190px);
 }
 
 button:focus {
@@ -174,10 +177,12 @@ button:focus {
 }
 
 /*=============================================================
-                    Project Footer Styles
+                    Project/Page Footer Styles
 ==============================================================*/
 
 .pf {
+    text-align: center;
+
     a, span {
         color: $grey;
         margin-bottom: 0;
@@ -221,6 +226,34 @@ button:focus {
 
     .conditional-margin {
         margin-bottom: 4rem;
+    }
+
+    .footer {
+        padding-top: 48px;
+        padding-bottom: 28px;
+    }
+
+    .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        & a {
+            color: #77797A;
+            transition: all 350ms ease-out;
+
+            &:not(:first-child) {
+                margin-left: 1rem;
+            }
+
+            &:hover {
+                color: #bbbbbb;
+            }
+        }
+    }
+
+    .footer-padding {
+        padding: 10px 0;
     }
 
 /*=============================================================
@@ -331,6 +364,10 @@ h5.subtitle {
     .section.adjust-padding {
         padding: 3rem 0;
     }
+
+    .pf {
+        text-align: left;
+    }
 }
 
 @media (min-width: 992px) {
@@ -371,7 +408,10 @@ h5.subtitle {
 
     .main {
         padding-top: 70px;
-        padding-bottom: 70px;
+    }
+
+    .page-content {
+        min-height: calc(100vh - 190px - 25px);
     }
 }
 

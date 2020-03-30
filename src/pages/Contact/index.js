@@ -1,16 +1,16 @@
 import React, { Component, Fragment } from 'react';
 import Typography from 'components/Typography';
 import LabelBlock from 'components/LabelBlock';
+import { social } from 'shared/consts';
 
-const email = 'gtamhan3@gatech.edu';
-const github = 'https://github.com/gauravtamhan';
-const linkedin = 'https://www.linkedin.com/in/gauravtamhan/';
 class Contact extends Component {
     componentDidMount() {
         document.title = this.props.title;
     }
 
     render() {
+        const { email, github, linkedin } = social;
+
         return (
             <Fragment>
                 <div className="padding-sm">

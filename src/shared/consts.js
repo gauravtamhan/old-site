@@ -16,3 +16,9 @@ export const projects = [
         location: '/contact',
     },
 ];
+
+export const social = {
+    email: 'gtamhan3@gatech.edu',
+    github: 'https://github.com/gauravtamhan',
+    linkedin: 'https://www.linkedin.com/in/gauravtamhan/',
+};

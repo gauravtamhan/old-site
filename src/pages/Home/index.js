@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import Typography from 'components/Typography';
 import { Link } from 'react-router-dom'
-import { projects } from 'shared/projects';
+import { projects } from 'shared/consts';
 
 class Home extends Component {
     componentDidMount() {

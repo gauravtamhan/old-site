@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Section from 'components/Section';
 import { NavLink, Link } from 'react-router-dom'
-import { projects } from 'shared/projects';
+import { projects } from 'shared/consts';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
@@ -16,7 +16,7 @@ const ProjectFooter = () => {
                                 behavior: "smooth"
                             });
                         }}>
-                        <FontAwesomeIcon icon={faChevronUp} size="md" />
+                        <FontAwesomeIcon icon={faChevronUp} />
                     </button>
                 </div>
                 <div className="col-md-10 order-md-first">
@@ -27,7 +27,7 @@ const ProjectFooter = () => {
                     {
                         projects.map((item, index) => {
                             return (
-                                <Fragment>
+                                <Fragment key={index}>
                                     <span> / </span>
                                     <NavLink to={item.location}>
                                         {item.label}
