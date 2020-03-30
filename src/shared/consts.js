@@ -5,15 +5,15 @@ export const projects = [
     },
     {
         label: 'Fitspot Wellness',
-        location: '/contact',
+        location: '/coming-soon',
     },
     {
         label: 'Site Redesign',
-        location: '/contact',
+        location: '/coming-soon',
     },
     {
         label: 'React Native App',
-        location: '/contact',
+        location: '/coming-soon',
     },
 ];
 

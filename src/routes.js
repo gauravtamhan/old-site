@@ -1,10 +1,11 @@
 import React from 'react';
 import { Route, HashRouter as Router, Switch } from 'react-router-dom';
-import NotFoundScene from 'pages/NotFound/NotFoundScene';
+import NotFoundScene from 'pages/Peripheral/NotFoundScene';
 import HomeScene from 'pages/Home/HomeScene';
 import ContactScene from 'pages/Contact/ContactScene';
 import HouseATLScene from 'pages/HouseATL/HouseATLScene';
 import ScrollToTop from 'components/ScrollToTop';
+import ComingSoonScene from 'pages/Peripheral/ComingSoonScene';
 
 export default props => (
     <Router>
@@ -13,6 +14,7 @@ export default props => (
             <Route exact path="/" component={HomeScene} />
             <Route exact path="/contact" component={ContactScene} />
             <Route exact path="/house-atl-data-collective" component={HouseATLScene} />
+            <Route exact path="/coming-soon" component={ComingSoonScene} />
             <Route component={NotFoundScene} />
         </Switch>
     </Router>
