@@ -18,7 +18,7 @@ const data = [
     },
     {
         icon: faEnvelope,
-        link: email,
+        link: `mailto:${email}`,
     },
 ]
 

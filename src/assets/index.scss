@@ -188,6 +188,10 @@ button:focus {
         margin-bottom: 0;
     }
 
+    span {
+        cursor: default;
+    }
+
     a {
         transition: all 350ms ease-out;
 
