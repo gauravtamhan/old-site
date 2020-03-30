@@ -1,13 +1,19 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-const Section = (props) => {
+const Section = ({ noAnimation, adjustPadding, children }) => {
     return (
-        <div className="section">
-            <ScrollAnimation animateIn="fadeIn">
-                {props.children}
-            </ScrollAnimation>
-        </div>
+        noAnimation ? (
+            <div className={`section ${adjustPadding ? 'adjust-padding' : ''}`}>
+                {children}
+            </div >
+        ) : (
+            <div className={`section ${adjustPadding ? 'adjust-padding' : ''}`}>
+                <ScrollAnimation animateIn="fadeIn" animateOnce>
+                    {children}
+                </ScrollAnimation >
+            </div >
+        )
     );
 }
 

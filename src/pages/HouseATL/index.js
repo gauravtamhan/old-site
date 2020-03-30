@@ -4,6 +4,7 @@ import Button from 'components/Button';
 import LabelBlock from 'components/LabelBlock';
 import Image from 'components/Image';
 import Section from 'components/Section';
+import ProjectFooter from 'components/ProjectFooter';
 
 const pageTitle = 'House ATL Data Collective';
 
@@ -135,6 +136,7 @@ class HouseATL extends Component {
                     </div>
                 </Section>
 
+                <ProjectFooter />
 
             </Fragment>
         );

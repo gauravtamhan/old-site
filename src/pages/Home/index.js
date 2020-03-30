@@ -1,25 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import Typography from 'components/Typography';
 import { Link } from 'react-router-dom'
+import { projects } from 'shared/projects';
 
-const links = [
-    {
-        label: 'House ATL Data Collective',
-        location: '/house-atl-data-collective',
-    },
-    {
-        label: 'Fitspot Wellness',
-        location: '/contact',
-    },
-    {
-        label: 'Site Redesign',
-        location: '/contact',
-    },
-    {
-        label: 'React Native App',
-        location: '/contact',
-    },
-];
 class Home extends Component {
     componentDidMount() {
         document.title = this.props.title;
@@ -37,7 +20,7 @@ class Home extends Component {
                     </Typography>
                 </div>
 
-                {links.map((item, index) => (
+                {projects.map((item, index) => (
                     <div key={index} className="row">
                         <div className="col-md-10 col-lg-8 col-xl-7 works">
                             <Typography variant="subtitle">
