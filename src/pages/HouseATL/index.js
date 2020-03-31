@@ -83,8 +83,8 @@ class HouseATL extends Component {
                 </Section>
 
                 <Section>
-                    <Image src={require('./imgs/image-2.png')} label="Income Breakdown" />
-                    <Image src={require('./imgs/image-3.png')} label="Aggregate Data Charts" />
+                    <Image src={require('./imgs/image-2.png')}  />
+                    <Image src={require('./imgs/image-3.png')}  />
                 </Section>
 
                 <Section>
