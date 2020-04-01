@@ -28,7 +28,7 @@ const Navbar = ({ back }) => {
             <div className="g nav d-flex flex-row">
                 {NAV_ITEMS.map((item, index) => (
                     <NavLink
-                        className="nav-link"
+                        className="nav-link underline-from-left"
                         key={index}
                         exact
                         to={item.location}

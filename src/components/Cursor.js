@@ -7,7 +7,6 @@ class Cursor extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            cursorEnlarged: false,
             size: normal,
             left: (window.innerWidth / 2),
             top: (window.innerHeight / 2),
@@ -26,14 +25,6 @@ class Cursor extends Component {
         document.removeEventListener('mousemove', this.moveCursor);
     }
 
-    toggleCursorSize = () => {
-        const { cursorEnlarged } = this.state;
-
-        this.setState({
-            size: cursorEnlarged ? small : normal
-        })
-    }
-
     moveCursor = (e) => {
         this.setState({
             left: e.clientX,
@@ -42,13 +33,11 @@ class Cursor extends Component {
     }
 
     shrinkCursorSize = () => {
-        this.setState({ cursorEnlarged: true })
-        this.toggleCursorSize();
+        this.setState({ size: small })
     }
 
     resetCursorSize = () => {
-        this.setState({ cursorEnlarged: false })
-        this.toggleCursorSize();
+        this.setState({ size: normal })
     }
 
     render() {
