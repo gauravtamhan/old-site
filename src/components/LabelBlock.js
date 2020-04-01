@@ -6,7 +6,7 @@ const LabelBlock = ({ label, block, link, tab }) => {
         link ? (
             <div className="label-block">
                 <Typography variant="label">{label}</Typography>
-                <a href={link} target={tab ? "_blank" : ''}>
+                <a href={link} target={tab ? "_blank" : ''} className="underline-from-left">
                     <Typography variant="block">{block}</Typography>
                 </a>
             </div>

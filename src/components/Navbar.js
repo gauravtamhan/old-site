@@ -18,7 +18,7 @@ const Navbar = ({ back }) => {
         back ? (
             <div className="g nav d-flex flex-row">
                 <Link
-                    className="nav-link back"
+                    className="nav-link underline-from-left"
                     to="/"
                 >
                     back

@@ -110,15 +110,6 @@ button:focus {
         &.active {
             border-bottom: 6px solid $theme-color;
         }
-
-        &.back {
-            border-bottom: 6px solid rgba(39, 110, 241, 0);
-            transition: border-bottom 350ms ease-out;
-
-            &:hover {
-                border-bottom: 6px solid rgba(39, 110, 241, 1);
-            }
-        }
     }
 
     a {
@@ -134,46 +125,51 @@ button:focus {
 }
 
 /*=============================================================
-                    Block Styles
+                    Hover Underline / Block Styles
 ==============================================================*/
 
-.label-block {
-    padding: 16px 0;
+.underline-from-left {
+    color: unset;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
 
-    a {
+    &:hover:before, &:focus:before, &:active:before {
+        right: 0;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: -10px;
+        background: $theme-color;
+        height: 6px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.35s;
+        transition-duration: 0.35s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+    &:hover {
+        text-decoration: none;
         color: unset;
-        padding-bottom: 6px;
-        border-bottom: 6px solid rgba(39, 110, 241, 0);
-        transition: border-bottom 350ms ease-out;
-        display: block;
-        width: fit-content;
-
-        &:hover {
-            text-decoration: none;
-            border-bottom: 6px solid rgba(39, 110, 241, 1);
-        }
     }
 }
 
-/*=============================================================
-                    Works Styles
-==============================================================*/
+.label-block {
+    padding: 22px 0;
+}
 
-.works {
-    a {
-        color: unset;
-        padding-bottom: 6px;
-        border-bottom: 6px solid rgba(39, 110, 241, 0);
-        transition: border-bottom 350ms ease-out;
-        display: block;
-        width: fit-content;
-        margin-bottom: 4.5rem;
-
-        &:hover {
-            text-decoration: none;
-            border-bottom: 6px solid rgba(39, 110, 241, 1);
-        }
-    }
+.works a {
+    margin-bottom: 5.2rem;
 }
 
 /*=============================================================

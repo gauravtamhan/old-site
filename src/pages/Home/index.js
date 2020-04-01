@@ -26,7 +26,7 @@ class Home extends Component {
                             <Typography variant="subtitle">
                                 {(index + 1).toLocaleString('en-US', { minimumIntegerDigits: 2 })}
                             </Typography>
-                            <Link to={item.location}>
+                            <Link to={item.location} className="underline-from-left">
                                 <Typography variant="title-2">
                                     {item.label}
                                 </Typography>
