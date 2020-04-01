@@ -47,7 +47,7 @@ body {
     min-height: calc(100vh - 190px);
 }
 
-button:focus {
+button:focus, a:focus {
     outline: none;
 }
 
@@ -74,7 +74,7 @@ button:focus {
     text-decoration: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
-    &:hover {
+    &:hover, &:focus, &:active {
         background-color: #205dcc;
         color: white;
         text-decoration: none;
@@ -200,7 +200,7 @@ button:focus {
             }
         }
 
-        &:hover:not(.active) {
+        &:hover:not(.active), &:focus, &:active {
             text-decoration: none;
             color: #bbbbbb;
         }
@@ -219,7 +219,7 @@ button:focus {
         border: none;
         transition: all 350ms ease-out;
 
-        &:hover {
+        &:hover, &:focus, &:active {
             background-color: #353535;
         }
     }
@@ -246,7 +246,7 @@ button:focus {
                 margin-left: 1rem;
             }
 
-            &:hover {
+            &:hover, &:active, &:focus {
                 color: #bbbbbb;
             }
         }
