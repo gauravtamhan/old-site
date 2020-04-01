@@ -30,6 +30,40 @@ $grey: #77797A;
 }
 
 /*=============================================================
+                    Custom Cursor Styles
+==============================================================*/
+
+html, body {
+    &, * {
+        cursor: none;
+    }
+}
+
+.cursor-dot {
+    pointer-events: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: transform 0.15s ease-in-out;
+    z-index: 99;
+}
+
+.cursor-dot {
+    $size: 25px;
+    width: $size;
+    height: $size;
+    background-color: rgba(0,0,0,0.4);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+button:not(:disabled) {
+    cursor: unset;
+}
+
+/*=============================================================
                     General Styles
 ==============================================================*/
 
@@ -63,7 +97,6 @@ button:focus, a:focus {
     display: inline-block;
     font-weight: 600;
     text-align: center;
-    cursor: pointer;
     -webkit-user-select: none;
     user-select: none;
     background-color: #276EF1;
@@ -182,10 +215,6 @@ button:focus, a:focus {
     a, span {
         color: $grey;
         margin-bottom: 0;
-    }
-
-    span {
-        cursor: default;
     }
 
     a {
