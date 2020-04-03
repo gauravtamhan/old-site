@@ -2,6 +2,8 @@
 @import '~animate.css/animate.min.css';
 
 $theme-color: #276EF1;
+// $theme-color: #e52e71;
+// $theme-color: linear-gradient(90deg,#ff8a00,#e52e71);
 $grey: #77797A;
 
 /*=============================================================
@@ -70,6 +72,7 @@ button:not(:disabled) {
 body {
     font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     background-color: black;
+    // background-color: #100e17;
     color: white;
 }
 
@@ -99,7 +102,7 @@ button:focus, a:focus {
     text-align: center;
     -webkit-user-select: none;
     user-select: none;
-    background-color: #276EF1;
+    background: $theme-color;
     color: white;
     padding: 0.6rem 1.2rem;
     font-size: 1.25rem;
@@ -108,7 +111,7 @@ button:focus, a:focus {
     transition: all 350ms ease-out;
 
     &:hover, &:focus, &:active {
-        background-color: #1b50b1;
+        background-color: darken( $theme-color, 15% );
         color: #d4d4d4;
         text-decoration: none;
     }
@@ -227,15 +230,16 @@ button:focus, a:focus {
 
         &:hover:not(.active), &:focus, &:active {
             text-decoration: none;
-            color: #bbbbbb;
+            color: lighten($grey, 25%);
         }
     }
 }
 
  .fab {
+        $bg-color: #212121;
         width: 50px;
         height: 50px;
-        background-color: #212121;
+        background-color: $bg-color;
         border-radius: 50%;
         text-align: center;
         -webkit-user-select: none;
@@ -245,7 +249,7 @@ button:focus, a:focus {
         transition: all 350ms ease-out;
 
         &:hover, &:focus, &:active {
-            background-color: #353535;
+            background-color: lighten($bg-color, 10%);;
         }
     }
 
@@ -264,7 +268,7 @@ button:focus, a:focus {
         justify-content: flex-end;
 
         & a {
-            color: #77797A;
+            color: $grey;
             transition: all 350ms ease-out;
 
             &:not(:first-child) {
@@ -272,7 +276,7 @@ button:focus, a:focus {
             }
 
             &:hover, &:active, &:focus {
-                color: #bbbbbb;
+                color: lighten($grey, 25%);
             }
         }
     }
