@@ -7,7 +7,7 @@ const Video = ({ label, src, margin }) => {
             {label && (
                 <Typography variant="block">{label}</Typography>
             )}
-            <video autoPlay muted loop>
+            <video playsInline autoPlay muted loop>
                 <source src={src} type="video/mp4" />
             </video>
         </div>
