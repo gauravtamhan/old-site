@@ -1,11 +1,11 @@
 export const projects = [
     {
         label: 'House ATL Data Collective',
-        location: '/house-atl-data-collective',
+        location: '/houseATL',
     },
     {
-        label: 'Fitspot Wellness',
-        location: '/coming-soon',
+        label: 'Working at Fitspot',
+        location: '/fitspot',
     },
     {
         label: 'Site Redesign',

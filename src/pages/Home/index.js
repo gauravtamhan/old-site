@@ -16,7 +16,7 @@ class Home extends Component {
                         I'm Gaurav,
                     </Typography>
                     <Typography variant="title">
-                        A front end dev with a passion for UX.
+                        A frontend dev with a passion for UX.
                     </Typography>
                 </div>
 

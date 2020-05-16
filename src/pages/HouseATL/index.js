@@ -20,7 +20,7 @@ const tasks = [
 
 class HouseATL extends Component {
     componentDidMount() {
-        document.title = `Gaurav Tamhan | ${pageTitle}`;
+        document.title = `Gaurav Tamhan - ${pageTitle}`;
     }
 
     render() {
@@ -31,10 +31,10 @@ class HouseATL extends Component {
                 </Typography>
                 <div className="row">
                     <div className="col-md-6 col-lg-4 col-xl-3">
-                        <LabelBlock label="When" block="Fall 2019, 4 months" />
+                        <LabelBlock label="Duration" block="Fall 2019, 4 months" />
                     </div>
                     <div className="col-md-6 col-lg-4 col-xl-3">
-                        <LabelBlock label="Role" block="Front-end developer" />
+                        <LabelBlock label="Role" block="Frontend developer" />
                     </div>
                     <div className="col-md-6 col-lg-4 col-xl-3">
                         <LabelBlock label="Client" block="House ATL" />

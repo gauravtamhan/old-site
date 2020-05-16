@@ -35,35 +35,35 @@ $grey: #77797A;
                     Custom Cursor Styles
 ==============================================================*/
 
-html, body {
-    &, * {
-        cursor: none;
-    }
-}
+// html, body {
+//     &, * {
+//         cursor: none;
+//     }
+// }
 
-.cursor-dot {
-    pointer-events: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
-    opacity: 1;
-    transform: translate(-50%, -50%);
-    transition: transform 0.15s ease-in-out;
-    z-index: 99;
-}
+// .cursor-dot {
+//     pointer-events: none;
+//     position: fixed;
+//     top: 50%;
+//     left: 50%;
+//     border-radius: 50%;
+//     opacity: 1;
+//     transform: translate(-50%, -50%);
+//     transition: transform 0.15s ease-in-out;
+//     z-index: 99;
+// }
 
-.cursor-dot {
-    $size: 25px;
-    width: $size;
-    height: $size;
-    background-color: rgba(0,0,0,0.4);
-    border: 2px solid rgba(255, 255, 255, 0.7);
-}
+// .cursor-dot {
+//     $size: 25px;
+//     width: $size;
+//     height: $size;
+//     background-color: rgba(0,0,0,0.4);
+//     border: 2px solid rgba(255, 255, 255, 0.7);
+// }
 
-button:not(:disabled) {
-    cursor: unset;
-}
+// button:not(:disabled) {
+//     cursor: unset;
+// }
 
 /*=============================================================
                     General Styles
@@ -74,6 +74,9 @@ body {
     background-color: black;
     // background-color: #100e17;
     color: white;
+
+    // background-color: white;
+    // color: #444;
 }
 
 .main {
@@ -121,6 +124,10 @@ button:focus, a:focus {
     padding: 0.85rem 0;
 }
 
+.marginBottom {
+    margin-bottom: 4rem;
+}
+
 .spacer {
     height: 8rem;
 }
@@ -129,6 +136,12 @@ button:focus, a:focus {
     width: 100%;
     border-radius: 4px;
     margin: 1rem 0;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
 
 /*=============================================================
@@ -299,6 +312,10 @@ p {
         font-size: 1.4rem;
         font-weight: 600;
         margin-bottom: 0;
+
+        &.header {
+            margin-bottom: 1.3rem;
+        }
     }
 
     &.body {
