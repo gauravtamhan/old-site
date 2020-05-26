@@ -8,11 +8,15 @@ export const projects = [
         location: '/fitspot',
     },
     {
-        label: 'Site Redesign',
-        location: '/coming-soon',
+        label: 'Home Depot First Phone Redesign',
+        location: '/coming-soon', // firstphone
     },
     {
         label: 'React Native App',
+        location: '/coming-soon',
+    },
+    {
+        label: 'Site Redesign',
         location: '/coming-soon',
     },
 ];

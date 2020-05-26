@@ -29,7 +29,7 @@ class Contact extends Component {
                         <LabelBlock label="LinkedIn" block="in/gauravtamhan" link={linkedin} tab />
                     </div>
                     <div className="col-md-6 col-lg-4">
-                        <LabelBlock label="Resume" block="click to view" link={require('assets/resume/gaurav_tamhan_resume_2020.pdf')} tab />
+                        <LabelBlock label="Resume" block="click to view" link={require('assets/resume/gaurav_tamhan_resume_2020_updated.pdf')} tab />
                     </div>
                 </div>
             </Fragment>
