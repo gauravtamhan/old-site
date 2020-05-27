@@ -1,7 +1,7 @@
 export const projects = [
     {
         label: 'House ATL Data Collective',
-        location: '/houseATL',
+        location: '/data-collective',
     },
     {
         label: 'Working at Fitspot',
@@ -9,15 +9,15 @@ export const projects = [
     },
     {
         label: 'Home Depot First Phone Redesign',
-        location: '/coming-soon', // firstphone
+        location: '/first-phone',
     },
     {
         label: 'React Native App',
-        location: '/coming-soon',
+        location: '/react-native-app',
     },
     {
         label: 'Site Redesign',
-        location: '/coming-soon',
+        location: '/site-redesign',
     },
 ];
 

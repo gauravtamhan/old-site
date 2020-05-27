@@ -5,6 +5,7 @@ import LabelBlock from 'components/LabelBlock';
 import Image from 'components/Image';
 import Section from 'components/Section';
 import ProjectFooter from 'components/ProjectFooter';
+import { trackEvent } from 'shared/helpers';
 
 const pageTitle = 'House ATL Data Collective';
 
@@ -50,7 +51,7 @@ class HouseATL extends Component {
                         </div>
                     </div>
                     <div className="padding-sm">
-                        <Button link={liveLink}>View Live</Button>
+                        <Button link={liveLink} onClick={() => { trackEvent('Viewed HouseATL webapp') }}>View Live</Button>
                     </div>
                     <Image src={require('./imgs/image-1.png')} />
                 </Section>
