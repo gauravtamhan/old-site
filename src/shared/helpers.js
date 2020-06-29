@@ -5,9 +5,10 @@ import ReactGA from 'react-ga';
  *
  * @param {string} description - Brief explanation of the event.
  */
-export const trackEvent = (description) => {
-    ReactGA.event({
-        category: 'User Interaction',
-        action: description,
-    });
-}
+export const trackEvent = description => {
+    // ReactGA.event({
+    //     category: 'User Interaction',
+    //     action: description,
+    // });
+    console.log(description);
+};
